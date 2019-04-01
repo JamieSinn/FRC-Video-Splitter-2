@@ -231,20 +231,20 @@ namespace FRCVideoSplitter2
 
                 if (frcMatch.description.StartsWith("Qualification "))
                 {
-                    this.FIRSTDescription = "Qual " + frcMatch.description.Substring(14);
+                    this.FIRSTDescription = "Qualification Match " + frcMatch.description.Substring(14);
                 }
                 else
                 {
                     //playoffs
                     if (frcMatch.matchNumber >= 9 && frcMatch.matchNumber <= 12)
                     {
-                        this.FIRSTDescription = "Quarterfinal " + frcMatch.description;
+                        this.FIRSTDescription = "Quarterfinal Match " + frcMatch.description;
                     }
                     else if (frcMatch.matchNumber >= 17 && frcMatch.matchNumber <= 18)
                     {
-                        this.FIRSTDescription = "Semifinal " + frcMatch.description;
+                        this.FIRSTDescription = "Semifinal Match " + frcMatch.description;
                     }
-                    else if (frcMatch.matchNumber == 21 && Properties.Settings.Default.year == 2016)//only need to add for this season
+                    else if (frcMatch.matchNumber == 21 && Properties.Settings.Default.year == 2019)//only need to add for this season
                     {
                         this.FIRSTDescription = "Final " + frcMatch.description;
                     }

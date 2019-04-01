@@ -1407,7 +1407,7 @@ namespace FRCVideoSplitter2
                     //sb.AppendLine("http://www.thebluealliance.com/match/" + Properties.Settings.Default.year.ToString() + evt.code.ToLower() + "_" + matchesList[videoUploadIndex].TbaDescription.ToLower());//TBA Link
                     sb.AppendLine("https://frc-events.firstinspires.org/" + Properties.Settings.Default.year.ToString() + "/" + evt.code.ToUpper() + "/" + matchesList[videoUploadIndex].Level + "/" + matchesList[videoUploadIndex].MatchNumber);//FIRST Link
                     sb.AppendLine();
-                    sb.AppendLine("Uploaded by FRC Video Splitter");
+              
                     String videoDesc = sb.ToString();
 
                     int vidChunks = Convert.ToInt32(new FileInfo(matchesList[videoUploadIndex].VideoPath).Length);
